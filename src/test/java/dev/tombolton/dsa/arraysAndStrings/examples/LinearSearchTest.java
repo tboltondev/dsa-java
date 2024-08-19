@@ -1,8 +1,7 @@
 package dev.tombolton.dsa.arraysAndStrings.examples;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LinearSearchTest {
     @Test
@@ -14,7 +13,7 @@ public class LinearSearchTest {
         int result = LinearSearch.search(arr, 3);
 
         // Assert
-        assertEquals(2, result);
+        Assertions.assertEquals(2, result);
     }
 
     @Test
@@ -26,7 +25,7 @@ public class LinearSearchTest {
         int result = LinearSearch.search(arr, 5);
 
         // Assert
-        assertEquals(4, result);
+        Assertions.assertEquals(4, result);
     }
 
     @Test
@@ -38,6 +37,6 @@ public class LinearSearchTest {
         int result = LinearSearch.search(arr, 5);
 
         // Assert
-        assertEquals(-1, result);
+        Assertions.assertEquals(-1, result);
     }
 }

@@ -1,8 +1,7 @@
 package dev.tombolton.dsa.arraysAndStrings.examples;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class InsertionSortTest {
     @Test
@@ -14,6 +13,6 @@ public class InsertionSortTest {
         int[] result = InsertionSort.sort(arr);
 
         // Assert
-        assertArrayEquals(new int[]{-4, 0, 2, 3, 10, 26}, result);
+        Assertions.assertArrayEquals(new int[]{-4, 0, 2, 3, 10, 26}, result);
     }
 }

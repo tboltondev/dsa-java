@@ -1,8 +1,7 @@
 package dev.tombolton.dsa.arraysAndStrings.examples;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class BubbleSortTest {
     @Test
@@ -14,6 +13,6 @@ public class BubbleSortTest {
         int[] result = BubbleSort.sort(arr);
 
         // Assert
-        assertArrayEquals(new int[]{-4, 0, 2, 3, 10, 26}, result);
+        Assertions.assertArrayEquals(new int[]{-4, 0, 2, 3, 10, 26}, result);
     }
 }
