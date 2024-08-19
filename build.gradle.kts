@@ -5,7 +5,11 @@ plugins {
     id("java")
 }
 
-group = "dev.tombolton"
+java {
+    sourceCompatibility = JavaVersion.VERSION_22
+}
+
+group = "dev.tombolton.dsa"
 version = "1.0-SNAPSHOT"
 
 repositories {
