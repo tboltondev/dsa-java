@@ -14,7 +14,7 @@ public class LinearSearchTest {
         int result = LinearSearch.search(arr, 3);
 
         // Assert
-        assertEquals(result, 2);
+        assertEquals(2, result);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class LinearSearchTest {
         int result = LinearSearch.search(arr, 5);
 
         // Assert
-        assertEquals(result, 4);
+        assertEquals(4, result);
     }
 
     @Test
@@ -38,6 +38,6 @@ public class LinearSearchTest {
         int result = LinearSearch.search(arr, 5);
 
         // Assert
-        assertEquals(result, -1);
+        assertEquals(-1, result);
     }
 }
