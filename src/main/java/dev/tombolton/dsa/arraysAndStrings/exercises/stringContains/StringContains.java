@@ -1,7 +1,7 @@
 package dev.tombolton.dsa.arraysAndStrings.exercises.stringContains;
 
 /*
- * The best and average case scenarios for the given implementation in QUESTION.md is O(N) and O(N).
+ * The best and average case scenarios for the given implementation in QUESTION.md are O(N).
  * This solution reduces the best case scenario to O(1)
  */
 class StringContains {
