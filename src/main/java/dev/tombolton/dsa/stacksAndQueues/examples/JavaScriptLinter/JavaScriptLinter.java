@@ -6,21 +6,21 @@ import dev.tombolton.dsa.stacksAndQueues.examples.JavaScriptLinter.Exceptions.*;
 import java.util.Map;
 
 public class JavaScriptLinter {
-    Stack<Character> stack = new Stack<>();
+    Stack<Character> openingBraces = new Stack<>();
 
-    public void lint(String jsCode) throws Exception {
-        this.stack.clear();
+    public void lint(String javascriptCode) throws Exception {
+        this.openingBraces.clear();
 
-        for (Character character : jsCode.toCharArray()) {
+        for (Character character : javascriptCode.toCharArray()) {
             if (this.isOpeningBrace(character)) {
-                this.stack.push(character);
+                this.openingBraces.push(character);
 
             } else if (this.isClosingBrace(character)) {
-                if (this.stack.isEmpty()) {
+                if (this.openingBraces.isEmpty()) {
                     throw new MissingOpeningBraceException(character);
                 }
 
-                Character openingBrace = this.stack.pop();
+                Character openingBrace = this.openingBraces.pop();
 
                 if (this.isNotAMatch(openingBrace, character)) {
                     throw new MismatchedOpeningBraceException(character);
@@ -28,8 +28,8 @@ public class JavaScriptLinter {
             }
         }
 
-        if (!this.stack.isEmpty()) {
-            Character unclosedBrace = this.stack.read();
+        if (!this.openingBraces.isEmpty()) {
+            Character unclosedBrace = this.openingBraces.read();
             throw new MissingClosingBraceException(unclosedBrace);
         }
     }
