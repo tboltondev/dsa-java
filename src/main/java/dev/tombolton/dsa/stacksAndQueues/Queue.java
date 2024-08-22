@@ -2,6 +2,7 @@ package dev.tombolton.dsa.stacksAndQueues;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class Queue<T> {
     private final List<T> data = new ArrayList<>();
@@ -15,6 +16,13 @@ public class Queue<T> {
     }
 
     public T read() {
-        return this.data.getFirst();
+        try {
+            return this.data.getFirst();
+        } catch (Exception e) {
+            if (e instanceof NoSuchElementException) {
+                return null;
+            }
+            throw e;
+        }
     }
 }

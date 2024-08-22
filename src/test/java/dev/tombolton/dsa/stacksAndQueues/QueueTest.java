@@ -3,6 +3,7 @@ package dev.tombolton.dsa.stacksAndQueues;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class QueueTest {
     @Test
@@ -19,6 +20,7 @@ public class QueueTest {
         assertEquals(integerQueue.dequeue(), 1);
         assertEquals(integerQueue.dequeue(), 2);
         assertEquals(integerQueue.dequeue(), 3);
+        assertNull(integerQueue.read());
     }
 
     @Test
