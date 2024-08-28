@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.arraysandstrings.exercises.greatestNumber;
+package dev.tombolton.dsa.arraysandstrings.exercises.greatestnumber;
 
 class GreatestNumber {
     public static int greatestNumber(int[] arr) {

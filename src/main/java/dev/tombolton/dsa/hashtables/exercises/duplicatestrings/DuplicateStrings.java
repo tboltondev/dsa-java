@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.hashtables.exercises.duplicateStrings;
+package dev.tombolton.dsa.hashtables.exercises.duplicatestrings;
 
 import java.util.HashMap;
 

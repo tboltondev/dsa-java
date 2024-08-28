@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.arraysandstrings.exercises.stringContains;
+package dev.tombolton.dsa.arraysandstrings.exercises.stringcontains;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

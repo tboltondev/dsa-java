@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.hashtables.exercises.nonDuplicateChar;
+package dev.tombolton.dsa.hashtables.exercises.nonduplicatechar;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

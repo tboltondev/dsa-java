@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.arraysandstrings.exercises.greatestNumber;
+package dev.tombolton.dsa.arraysandstrings.exercises.greatestnumber;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.hashtables.exercises.arrayIntersection;
+package dev.tombolton.dsa.hashtables.exercises.arrayintersection;
 
 import java.util.ArrayList;
 import java.util.HashMap;

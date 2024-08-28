@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.hashtables.exercises.missingLetter;
+package dev.tombolton.dsa.hashtables.exercises.missingletter;
 
 import java.util.HashMap;
 

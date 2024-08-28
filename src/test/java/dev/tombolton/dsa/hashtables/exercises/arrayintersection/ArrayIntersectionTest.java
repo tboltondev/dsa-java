@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.hashtables.exercises.arrayIntersection;
+package dev.tombolton.dsa.hashtables.exercises.arrayintersection;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

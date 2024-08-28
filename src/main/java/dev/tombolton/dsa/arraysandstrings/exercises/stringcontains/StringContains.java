@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.arraysandstrings.exercises.stringContains;
+package dev.tombolton.dsa.arraysandstrings.exercises.stringcontains;
 
 /*
  * The best and average case scenarios for the given implementation in QUESTION.md are O(N).

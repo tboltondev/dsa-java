@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.stacksandqueues.exercises.reverseString;
+package dev.tombolton.dsa.stacksandqueues.exercises.reversestring;
 
 import org.junit.jupiter.api.Test;
 

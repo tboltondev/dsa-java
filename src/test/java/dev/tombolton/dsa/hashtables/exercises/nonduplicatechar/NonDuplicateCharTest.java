@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.hashtables.exercises.nonDuplicateChar;
+package dev.tombolton.dsa.hashtables.exercises.nonduplicatechar;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
