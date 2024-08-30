@@ -41,4 +41,40 @@ public class StaircaseProblemTest {
         // Assert
         assertEquals(504, result);
     }
+
+    @Test
+    public void shouldReturnCorrectCount_scenario4() {
+        // Arrange
+        int stairs = 1;
+
+        // Act
+        int result = StaircaseProblem.count(stairs);
+
+        // Assert
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void shouldReturnCorrectCount_scenario5() {
+        // Arrange
+        int stairs = 2;
+
+        // Act
+        int result = StaircaseProblem.count(stairs);
+
+        // Assert
+        assertEquals(2, result);
+    }
+
+    @Test
+    public void shouldReturnCorrectCount_scenario6() {
+        // Arrange
+        int stairs = 3;
+
+        // Act
+        int result = StaircaseProblem.count(stairs);
+
+        // Assert
+        assertEquals(4, result);
+    }
 }
