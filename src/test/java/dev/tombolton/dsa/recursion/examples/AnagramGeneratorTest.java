@@ -26,7 +26,6 @@ public class AnagramGeneratorTest {
 
         // Act
         List<String> anagrams = AnagramGenerator.generate(string);
-        System.out.println(anagrams);
 
         // Assert
         assertIterableEquals(expected, anagrams);
