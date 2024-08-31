@@ -11,33 +11,22 @@ public class AnagramGeneratorTest {
     public void shouldReturnAllAnagrams() {
         // Arrange
         String string = "abcde";
-        List<String> expected = List.of("abcde",
-                "bacde",
-                "bcade",
-                "bcdae",
-                "acbde",
-                "cabde",
-                "cbade",
-                "cbdae",
-                "acdbe",
-                "cadbe",
-                "cdabe",
-                "cdbae",
-                "abdce",
-                "badce",
-                "bdace",
-                "bdcae",
-                "adbce",
-                "dabce",
-                "dbace",
-                "dbcae",
-                "adcbe",
-                "dacbe",
-                "dcabe",
-                "dcbae");
+        List<String> expected = List.of("abcde", "bacde", "bcade", "bcdae", "bcdea", "acbde", "cabde",
+                "cbade", "cbdae", "cbdea", "acdbe", "cadbe", "cdabe", "cdbae", "cdbea", "acdeb", "cadeb", "cdaeb",
+                "cdeab", "cdeba", "abdce", "badce", "bdace", "bdcae", "bdcea", "adbce", "dabce", "dbace", "dbcae",
+                "dbcea", "adcbe", "dacbe", "dcabe", "dcbae", "dcbea", "adceb", "daceb", "dcaeb", "dceab", "dceba",
+                "abdec", "badec", "bdaec", "bdeac", "bdeca", "adbec", "dabec", "dbaec", "dbeac", "dbeca", "adebc",
+                "daebc", "deabc", "debac", "debca", "adecb", "daecb", "deacb", "decab", "decba", "abced", "baced",
+                "bcaed", "bcead", "bceda", "acbed", "cabed", "cbaed", "cbead", "cbeda", "acebd", "caebd", "ceabd",
+                "cebad", "cebda", "acedb", "caedb", "ceadb", "cedab", "cedba", "abecd", "baecd", "beacd", "becad",
+                "becda", "aebcd", "eabcd", "ebacd", "ebcad", "ebcda", "aecbd", "eacbd", "ecabd", "ecbad", "ecbda",
+                "aecdb", "eacdb", "ecadb", "ecdab", "ecdba", "abedc", "baedc", "beadc", "bedac", "bedca", "aebdc",
+                "eabdc", "ebadc", "ebdac", "ebdca", "aedbc", "eadbc", "edabc", "edbac", "edbca", "aedcb", "eadcb",
+                "edacb", "edcab", "edcba");
 
         // Act
         List<String> anagrams = AnagramGenerator.generate(string);
+        System.out.println(anagrams);
 
         // Assert
         assertIterableEquals(expected, anagrams);

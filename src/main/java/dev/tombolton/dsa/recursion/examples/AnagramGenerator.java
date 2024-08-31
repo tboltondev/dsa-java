@@ -11,8 +11,10 @@ public class AnagramGenerator {
         List<String> anagrams = generate(string.substring(1));
 
         for (String anagram : anagrams) {
-            for (int i = 0; i < anagram.length(); i++) {
-                String newAnagram = new StringBuilder(anagram).insert(i, string.charAt(0)).toString();
+            for (int i = 0; i <= anagram.length(); i++) {
+                String newAnagram = new StringBuilder(anagram)
+                        .insert(i, string.charAt(0))
+                        .toString();
                 collection.add(newAnagram);
             }
         }
