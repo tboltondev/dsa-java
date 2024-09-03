@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FibonacciTest {
+public class MemoizedFibonacciTest {
     @Test
     public void shouldReturnFibonacciNumberAtN() {
         // Arrange
@@ -14,7 +14,7 @@ public class FibonacciTest {
         HashMap<Integer, Integer> memo = new HashMap<>();
 
         // Act
-        Integer result = Fibonacci.valueAt(n, memo);
+        Integer result = MemoizedFibonacci.valueAt(n, memo);
 
         // Assert
         assertEquals(55, result);;
