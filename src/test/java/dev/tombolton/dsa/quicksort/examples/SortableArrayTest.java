@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.quickrecursion.examples;
+package dev.tombolton.dsa.quicksort.examples;
 
 import org.junit.jupiter.api.Test;
 

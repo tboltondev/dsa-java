@@ -1,4 +1,4 @@
-package dev.tombolton.dsa.quickrecursion.examples;
+package dev.tombolton.dsa.quicksort.examples;
 
 public class DuplicateValues {
     public static boolean hasDuplicate(SortableArray sortable) {
