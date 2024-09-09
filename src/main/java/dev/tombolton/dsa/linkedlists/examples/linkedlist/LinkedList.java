@@ -1,7 +1,5 @@
 package dev.tombolton.dsa.linkedlists.examples.linkedlist;
 
-import dev.tombolton.dsa.linkedlists.examples.Node;
-
 public class LinkedList<T> {
     public Node<T> firstNode;
 
