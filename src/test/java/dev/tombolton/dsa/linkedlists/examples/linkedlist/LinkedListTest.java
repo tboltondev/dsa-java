@@ -1,11 +1,10 @@
-package dev.tombolton.dsa.linkedlists.examples;
+package dev.tombolton.dsa.linkedlists.examples.linkedlist;
 
-import dev.tombolton.dsa.linkedlists.examples.linkedlist.LinkedList;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class LinkedListsTest {
+public class LinkedListTest {
     @Test
     public void shouldCreateLinkedList() {
         // Arrange
