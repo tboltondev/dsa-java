@@ -28,14 +28,16 @@ public class QueueTest {
         // Arrange
         Queue<String> stringQueue = new Queue<>();
 
-        // Act
         stringQueue.enqueue("Hello");
         stringQueue.enqueue("World");
         stringQueue.enqueue("From");
         stringQueue.enqueue("My Queue");
 
+        // Act
+        String result = stringQueue.read();
+
         // Assert
-        assertEquals(stringQueue.read(), "Hello");
+        assertEquals(result, "Hello");
 
         stringQueue.dequeue();
         stringQueue.dequeue();
