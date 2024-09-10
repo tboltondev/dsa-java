@@ -86,6 +86,8 @@ public class LinkedList<T> {
     }
 
     public String toString() {
+        if (firstNode == null) return null;
+        if (firstNode.nextNode == null) return firstNode.data.toString();
         return firstNode.data.toString() + ", " + toString(firstNode.nextNode);
     }
 
