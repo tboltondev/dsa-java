@@ -59,16 +59,19 @@ public class DoublyLinkedList<T> {
     }
 
     public String toString() {
-        if (firstNode == null) return null;
-        if (firstNode.nextNode == null) return firstNode.data.toString();
-        return firstNode.data.toString() + ", " + toString(firstNode.nextNode);
-    }
-
-    private String toString(Node<T> node) {
-        if (node.nextNode == null) {
-            return node.data.toString();
+        if (firstNode == null) {
+            return null;
         }
 
-        return node.data.toString() + ", " + toString(node.nextNode);
+        Node<T> curentNode = firstNode;
+
+        StringBuilder result = new StringBuilder();
+
+        while (curentNode != null) {
+            result.append(curentNode.data).append(curentNode.nextNode == null ? "" : ", ");
+            curentNode = curentNode.nextNode;
+        }
+
+        return result.toString();
     }
 }
