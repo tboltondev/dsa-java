@@ -47,9 +47,14 @@ public class DoublyLinkedList<T> {
 
     public T removeFromFront() {
         if (firstNode == null) return null;
+
         Node<T> removedNode = firstNode;
         firstNode = firstNode.nextNode;
-        firstNode.previousNode = null;
+
+        if (firstNode != null) {
+            firstNode.previousNode = null;
+        }
+
         return removedNode.data;
     }
 
