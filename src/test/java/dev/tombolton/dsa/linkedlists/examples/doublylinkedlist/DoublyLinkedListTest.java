@@ -79,4 +79,14 @@ public class DoublyLinkedListTest {
         assertNull(result);
         assertNull(list.toString());
     }
+
+    @Test
+    public void shouldReturnStringOfListInReverse() {
+        // Arrange
+        // Act
+        DoublyLinkedList<Integer> doublyLinkedList = new DoublyLinkedList<>(1000, 1001, 1002, 1003);
+
+        // Assert
+        assertEquals("1003, 1002, 1001, 1000", doublyLinkedList.toStringReverse());
+    }
 }

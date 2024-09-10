@@ -74,4 +74,21 @@ public class DoublyLinkedList<T> {
 
         return result.toString();
     }
+
+    public String toStringReverse() {
+        if (lastNode == null) {
+            return null;
+        }
+
+        Node<T> currentNode = lastNode;
+
+        StringBuilder result = new StringBuilder();
+
+        while (currentNode != null) {
+            result.append(currentNode.data).append(currentNode.previousNode == null ? "" : ", ");
+            currentNode = currentNode.previousNode;
+        }
+
+        return result.toString();
+    }
 }
