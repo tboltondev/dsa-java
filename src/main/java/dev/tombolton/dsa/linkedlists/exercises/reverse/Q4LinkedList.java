@@ -10,17 +10,18 @@ public class Q4LinkedList<T> extends LinkedList<T> {
     }
 
     public void reverse() {
-        Node<T> currentNode = firstNode.nextNode;
-        firstNode.nextNode = null;
+        Node<T> previousNode = null;
+        Node<T> currentNode = firstNode;
 
         while (currentNode != null) {
-            Node<T> previousFirstNode = firstNode;
-            Node<T> nodeAfter = currentNode.nextNode;
+            Node<T> nextNode = currentNode.nextNode;
 
-            firstNode = currentNode;
-            firstNode.nextNode = previousFirstNode;
+            currentNode.nextNode = previousNode;
 
-            currentNode = nodeAfter;
+            previousNode = currentNode;
+            currentNode = nextNode;
         }
+
+        firstNode = previousNode;
     }
 }
