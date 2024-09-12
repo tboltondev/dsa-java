@@ -21,10 +21,10 @@ public class LinkedListTest {
         LinkedList<String> list = new LinkedList<>("Once", "upon", "a", "time");
 
         // Act
-        String result = list.read(3);
+        Node<String> result = list.read(3);
 
         // Assert
-        assertEquals("time", result);
+        assertEquals("time", result.data);
     }
 
     @Test

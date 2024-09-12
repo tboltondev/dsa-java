@@ -17,7 +17,7 @@ public class LinkedList<T> {
         }
     }
 
-    public T read(int index) {
+    public Node<T> read(int index) {
         Node<T> currentNode = firstNode;
         int currentIndex = 0;
 
@@ -27,7 +27,7 @@ public class LinkedList<T> {
             if (currentNode == null) return null;
         }
 
-        return currentNode.data;
+        return currentNode;
     }
 
     public Integer search(T value) {

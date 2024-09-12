@@ -16,8 +16,8 @@ public class Q4LinkedListTest {
         // Assert
         assertEquals("D, C, B, A", list.toString());
         assertEquals('D', list.firstNode.data);
-        assertEquals('C', list.read(1));
-        assertEquals('B', list.read(2));
-        assertEquals('A', list.read(3));
+        assertEquals('C', list.read(1).data);
+        assertEquals('B', list.read(2).data);
+        assertEquals('A', list.read(3).data);
     }
 }
