@@ -1,30 +1,30 @@
 package dev.tombolton.dsa.trees.examples.binarysearchtree;
 
 public class BinarySearchTree {
-    public static <T> TreeNode<T> search(T searchValue, TreeNode<T> root) {
-        if (searchValue == root.value) {
-            return root;
+    public static <T> TreeNode<T> search(T searchValue, TreeNode<T> node) {
+        if (searchValue == node.getValue()) {
+            return node;
         }
 
-        if ((Integer) searchValue < (Integer) root.value) { // should implement comparison based on type
-            return search(searchValue, root.leftChild);
+        if ((Integer) searchValue < (Integer) node.getValue()) { // should implement comparison based on type
+            return search(searchValue, node.getLeftChild());
         } else {
-            return search(searchValue, root.rightChild);
+            return search(searchValue, node.getRightChild());
         }
     }
 
     public static <T> void insert(T value, TreeNode<T> node) {
-        if ((Integer) value > (Integer) node.value) {
-            if (node.rightChild != null) {
-                insert(value, node.rightChild);
+        if ((Integer) value > (Integer) node.getValue()) {
+            if (node.getRightChild() != null) {
+                insert(value, node.getRightChild());
             } else {
-                node.rightChild = new TreeNode<>(value);
+                node.setRightChild(new TreeNode<>(value));
             }
-        } else if ((Integer) value < (Integer) node.value) { // should implement comparison based on type
-            if (node.leftChild != null) {
-                insert(value, node.leftChild);
+        } else if ((Integer) value < (Integer) node.getValue()) { // should implement comparison based on type
+            if (node.getLeftChild() != null) {
+                insert(value, node.getLeftChild());
             } else {
-                node.leftChild = new TreeNode<>(value);
+                node.setLeftChild(new TreeNode<>(value));
             }
         }
     }

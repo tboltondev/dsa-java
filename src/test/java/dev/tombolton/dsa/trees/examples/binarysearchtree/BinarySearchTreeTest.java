@@ -16,11 +16,11 @@ public class BinarySearchTreeTest {
         TreeNode<Integer> node27 = new TreeNode<>(27);
         TreeNode<Integer> node6 = new TreeNode<>(6);
 
-        node72.rightChild = node84;
-        node72.leftChild = node53;
+        node72.setRightChild(node84);
+        node72.setLeftChild(node53);
 
-        node27.rightChild = node48;
-        node27.leftChild = node6;
+        node27.setRightChild(node48);
+        node27.setLeftChild(node6);
 
         TreeNode<Integer> root = new TreeNode<>(50, node27, node72);
 
@@ -41,11 +41,11 @@ public class BinarySearchTreeTest {
         TreeNode<Integer> node27 = new TreeNode<>(27);
         TreeNode<Integer> node6 = new TreeNode<>(6);
 
-        node72.rightChild = node84;
-        node72.leftChild = node53;
+        node72.setRightChild(node84);
+        node72.setLeftChild(node53);
 
-        node27.rightChild = node48;
-        node27.leftChild = node6;
+        node27.setRightChild(node48);
+        node27.setLeftChild(node6);
 
         TreeNode<Integer> root = new TreeNode<>(50, node27, node72);
 
@@ -53,7 +53,7 @@ public class BinarySearchTreeTest {
         BinarySearchTree.insert(60, root);
 
         // Assert
-        assertEquals(60, node53.rightChild.value);
+        assertEquals(60, node53.getRightChild().getValue());
     }
 
     @Test
@@ -66,11 +66,11 @@ public class BinarySearchTreeTest {
         TreeNode<Integer> node27 = new TreeNode<>(27);
         TreeNode<Integer> node6 = new TreeNode<>(6);
 
-        node72.rightChild = node84;
-        node72.leftChild = node53;
+        node72.setRightChild(node84);
+        node72.setLeftChild(node53);
 
-        node27.rightChild = node48;
-        node27.leftChild = node6;
+        node27.setRightChild(node48);
+        node27.setLeftChild(node6);
 
         TreeNode<Integer> root = new TreeNode<>(50, node27, node72);
 
@@ -78,13 +78,13 @@ public class BinarySearchTreeTest {
         BinarySearchTree.insert(84, root);
 
         // Assert
-        assertNull(node6.leftChild);
-        assertNull(node6.rightChild);
-        assertNull(node48.leftChild);
-        assertNull(node48.rightChild);
-        assertNull(node53.leftChild);
-        assertNull(node53.rightChild);
-        assertNull(node84.leftChild);
-        assertNull(node84.rightChild);
+        assertNull(node6.getLeftChild());
+        assertNull(node6.getRightChild());
+        assertNull(node48.getLeftChild());
+        assertNull(node48.getRightChild());
+        assertNull(node53.getLeftChild());
+        assertNull(node53.getRightChild());
+        assertNull(node84.getLeftChild());
+        assertNull(node84.getRightChild());
     }
 }

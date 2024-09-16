@@ -1,9 +1,9 @@
 package dev.tombolton.dsa.trees.examples.binarysearchtree;
 
 public class TreeNode<T> {
-    T value;
-    TreeNode<T> leftChild;
-    TreeNode<T> rightChild;
+    private T value;
+    private TreeNode<T> leftChild;
+    private TreeNode<T> rightChild;
 
     public TreeNode(T value, TreeNode<T> leftChild, TreeNode<T> rightChild) {
         this.value = value;
@@ -12,6 +12,30 @@ public class TreeNode<T> {
     }
 
     public TreeNode(T value) {
+        this.value = value;
+    }
+
+    public TreeNode<T> getLeftChild() {
+        return leftChild;
+    }
+
+    public void setLeftChild(TreeNode<T> leftChild) {
+        this.leftChild = leftChild;
+    }
+
+    public TreeNode<T> getRightChild() {
+        return rightChild;
+    }
+
+    public void setRightChild(TreeNode<T> rightChild) {
+        this.rightChild = rightChild;
+    }
+
+    public T getValue() {
+        return value;
+    }
+
+    public void setValue(T value) {
         this.value = value;
     }
 }
