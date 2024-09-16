@@ -12,4 +12,20 @@ public class BinarySearchTree {
             return search(searchValue, root.rightChild);
         }
     }
+
+    public static <T> void insert(T value, TreeNode<T> node) {
+        if ((Integer) value > (Integer) node.value) {
+            if (node.rightChild != null) {
+                insert(value, node.rightChild);
+            } else {
+                node.rightChild = new TreeNode<>(value);
+            }
+        } else if ((Integer) value < (Integer) node.value) { // should implement comparison based on type
+            if (node.leftChild != null) {
+                insert(value, node.leftChild);
+            } else {
+                node.leftChild = new TreeNode<>(value);
+            }
+        }
+    }
 }
