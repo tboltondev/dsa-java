@@ -62,7 +62,6 @@ public class BinarySearchTree {
     }
 
     public static <T> String toString(TreeNode<T> root) {
-
         if (root == null) {
             return "";
         }
