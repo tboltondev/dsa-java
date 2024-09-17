@@ -52,13 +52,13 @@ public class BinarySearchTree {
     }
 
     private static <T> TreeNode<T> lift(TreeNode<T> node, TreeNode<T> nodeToDelete) {
-       if (node.getLeftChild() != null) {
-           node.setLeftChild(lift(node.getLeftChild(), nodeToDelete));
-           return node;
-       } else {
+        if (node.getLeftChild() != null) {
+            node.setLeftChild(lift(node.getLeftChild(), nodeToDelete));
+            return node;
+        } else {
             nodeToDelete.setValue(node.getValue());
             return node.getRightChild();
-       }
+        }
     }
 
     public static <T> String toString(TreeNode<T> root) {
